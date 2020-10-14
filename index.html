@@ -4,7 +4,8 @@
 
 <head>
   <meta charset="utf-8">
-  <script src="node_modules/undo.js/undo.js"></script>
+  <!-- <script src="node_modules/undo.js/undo.js"></script> -->
+  <script src="js/scripts.min.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <title>PPOV Widget 💻</title>
   <meta name="description" content="PPOV Widget">
@@ -12,7 +13,7 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <script>
+  <!-- <script>
     $(function () {
       var stack = new Undo.Stack(),
         UpCommand = Undo.Command.extend({
@@ -66,7 +67,7 @@
         return false;
       })
     });
-  </script>
+  </script> -->
 
 </head>
 
@@ -102,28 +103,28 @@
       <div id="homepage">
         <!-- Services -->
         <section id="services" class="clear">
-          <article class="one_third">
+          <article id="one" class="one_third">
             <figure><img src="images/demo/290x180.gif" width="290" height="180" alt="">
               <figcaption>
-                <h2>Indonectetus facilis</h2>
+                <h2>1) Indonectetus facilis</h2>
                 <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
                 <footer class="more"><a href="#">Read More &raquo;</a></footer>
               </figcaption>
             </figure>
           </article>
-          <article class="one_third">
+          <article id="two" class="one_third">
             <figure><img src="images/demo/290x180.gif" width="290" height="180" alt="">
               <figcaption>
-                <h2>Indonectetus facilis</h2>
+                <h2>2) Indonectetus facilis</h2>
                 <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
                 <footer class="more"><a href="#">Read More &raquo;</a></footer>
               </figcaption>
             </figure>
           </article>
-          <article class="one_third lastbox">
+          <article id="three" class="one_third lastbox">
             <figure><img src="images/demo/290x180.gif" width="290" height="180" alt="">
               <figcaption>
-                <h2>Indonectetus facilis</h2>
+                <h2>3) Indonectetus facilis</h2>
                 <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
                 <footer class="more"><a href="#">Read More &raquo;</a></footer>
               </figcaption>

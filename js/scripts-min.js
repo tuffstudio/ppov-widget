@@ -1,0 +1,2 @@
+$((function(){var o=[];$(".one_third").click((function(){!function(n){console.log(this.idName),o.push(n),$("#"+n).hide(),console.log(o)}(this.id)})),$(".undo").click((function(){$("#"+o[o.length-1]).show(),o.pop(),console.log(o)}))}));
+//# sourceMappingURL=scripts-min.js.map
