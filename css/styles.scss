@@ -217,7 +217,8 @@ q {
 		@extend %extend_6;
 	}
 }
-.row1 {
+#row1 {
+	height: 120px;
 	color: $color_tide_approx;
 	background-color: $color_mine_shaft_approx;
 	a {
@@ -225,7 +226,7 @@ q {
 		background-color: $color_mine_shaft_approx;
 	}
 }
-.row2 {
+#row2 {
 	color: $color_martini_approx;
 	background-color: $white;
 	a {
@@ -233,7 +234,7 @@ q {
 		background-color: $white;
 	}
 }
-.row3 {
+#row3 {
 	color: $color_martini_approx;
 	background-color: $color_mine_shaft_approx;
 	a {
@@ -241,7 +242,7 @@ q {
 		background-color: $color_mine_shaft_approx;
 	}
 }
-.row4 {
+#row4 {
 	color: $color_gray_approx;
 	background-color: $color_mine_shaft_approx;
 	a {
