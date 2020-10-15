@@ -11,63 +11,11 @@
   <meta name="description" content="PPOV Widget">
   <meta name="author" content="Tuff">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
 
-  <!-- <script>
-    $(function () {
-      var stack = new Undo.Stack(),
-        UpCommand = Undo.Command.extend({
-          constructor: function (li) {
-            this.li = li;
-          },
-          execute: function () {
-            this.li.insertBefore(this.li.prev());
-          },
-          undo: function () {
-            this.li.insertAfter(this.li.next());
-          }
-        }),
-        DownCommand = UpCommand.extend({
-          execute: UpCommand.prototype.undo,
-          undo: UpCommand.prototype.execute,
-        });
-      stack.changed = function () {
-        stackUI();
-        listUI();
-      };
-
-      var undo = $(".undo"),
-        redo = $(".redo"),
-        dirty = $(".dirty");
-      function stackUI() {
-        undo.attr("disabled", !stack.canUndo());
-        redo.attr("disabled", !stack.canRedo());
-        dirty.toggle(stack.dirty());
-      }
-      function listUI() {
-        $("ul li button").attr("disabled", false);
-        $("ul li:first .up").attr("disabled", true);
-        $("ul li:last .down").attr("disabled", true);
-      }
-      stackUI();
-      listUI();
-
-      $(document.body).delegate(".undo, .redo, .save", "click", function () {
-        var what = $(this).attr("class");
-        stack[what]();
-        return false;
-      })
-      $(document.body).delegate(".up, .down", "click", function () {
-        var what = $(this).attr("class");
-        if (what == "up") {
-          stack.execute(new UpCommand($(this).parent()));
-        } else {
-          stack.execute(new DownCommand($(this).parent()));
-        }
-        return false;
-      })
-    });
-  </script> -->
+  <style>
+    .imgr,.imgl,.imgholder{padding:4px;border:1px solid #d6d6d6;text-align:center}section,nav,header,footer,figure,figcaption,aside,article,address{display:block;margin:0;padding:0}#copyright,#footer,#container,#header{display:block;width:960px;margin:0 auto}h6,h5,h4,h3,h2,h1{margin:0;padding:0;font-size:32px;font-weight:normal;font-style:italic;line-height:normal}blockquote,q{display:block;padding:8px 10px;color:#979797;background-color:#ececec;font-style:italic;line-height:normal}blockquote:after,q:after{content:" „";font-size:26px;line-height:0}legend,fieldset,form{margin:0;padding:0;border:none}.four_quarter,.three_quarter,.two_quarter,.one_quarter{display:block;float:left;margin:0 20px 0 0}.three_third,.two_third,.one_third{display:block;float:left;margin:0 30px 0 0}#header #hgroup h2,#header #hgroup h1{font-weight:normal;font-style:normal;text-transform:none}html{overflow-y:scroll}body{margin:0;padding:0;font-size:13px;font-family:Georgia,Times New Roman,Times,serif;color:#919191;background-color:#232323}.clear{display:block;clear:both}.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0}a{outline:none;text-decoration:none}code{font-weight:normal;font-style:normal;font-family:Georgia,Times New Roman,Times,serif}.fl_left{float:left}.fl_right{float:right}img{margin:0;padding:0;border:none;line-height:normal;vertical-align:middle}.imgl{float:left;margin:0 15px 15px 0;clear:left}.imgr{float:right;margin:0 0 15px 15px;clear:right}address{font-style:normal}nav ul{margin:0;padding:0;list-style:none}q{display:block;padding:0 10px 8px;color:#979797;background-color:#ececec;font-style:italic;line-height:normal}q:before{content:"“ ";font-size:26px;content:"“ ";font-size:26px}q:after{content:" „";font-size:26px;line-height:0}.row1{color:#c0bab6;background-color:#232323}.row1 a{color:#c0bab6;background-color:#232323}.row2{color:#979797;background-color:#fff}.row2 a{color:#f90;background-color:#fff}.row3{color:#979797;background-color:#232323}.row3 a{color:#f90;background-color:#232323}.row4{color:#919191;background-color:#232323}.row4 a{color:#919191;background-color:#232323}#header{padding:20px 0}#header #hgroup{float:left;margin:0 0 20px 0}#header #hgroup h1{font-size:36px}#header #hgroup h2{font-size:13px}#header nav{display:block;float:right;margin:10px 0 0;padding:20px 0;color:#c0bab6;background-color:#232323}#header nav ul{padding:0 20px}#header nav li{display:inline;margin-right:25px;text-transform:uppercase}#header nav li.last{margin-right:0}#header nav li a{color:#c0bab6;background-color:#232323}#header nav li a:hover{color:#f90;background-color:#232323}#container{padding:30px 0}#container section{display:block;width:100%;margin:0 0 30px 0;padding:0}#container .last{margin:0}#container .more{text-align:right}#container #homepage{display:block;width:100%;line-height:1.8em}#container #homepage #services article figure img{margin:0 0 15px 0;padding:4px;border:1px solid #d6d6d6}#container #homepage #services article figure h2{font-size:14px;font-weight:bold}#container #homepage #intro article figure img{float:right;margin:0 0 10px 0;padding:4px;border:1px solid #d6d6d6}#container #homepage #intro article figure figcaption{float:left;width:460px}#footer{padding:30px 0;font-size:12px;line-height:1.4em}#footer section h2.title{margin:0 0 25px 0;padding:0;color:#fff;background-color:#232323;font-size:12px;font-weight:bold;text-transform:uppercase}#footer section nav li{margin:0 0 5px 0;padding:0 0 5px 0;border-bottom:1px solid #555}#footer section nav li.last{margin:0}#copyright{padding:20px 0}#copyright p{margin:0;padding:0}blockquote:before{content:"“ ";font-size:26px}legend{display:none}input{font-size:12px;font-family:Georgia,Times New Roman,Times,serif}textarea{font-size:12px;font-family:Georgia,Times New Roman,Times,serif}select{font-size:12px;font-family:Georgia,Times New Roman,Times,serif}.one_quarter{width:225px}.two_quarter{width:470px}.three_quarter{width:715px}.four_quarter{width:960px;float:none;margin-right:0;clear:both}.one_third{width:300px}.two_third{width:630px}.three_third{width:960px;float:none;margin-right:0;clear:both}.lastbox{margin-right:0}html[xmlns] .clear{display:block}* html .clear{height:1%}div.wrapper{display:block;width:100%;margin:0;padding:0;text-align:left}/*# sourceMappingURL=styles.css.map */
+  </style>
 
 </head>
 
@@ -226,6 +174,27 @@
   </div>
   </body>
   <script src="js/scripts.js"></script>
+  <script>
+    $(document).ready(function ($) {
+        var rules;
+        for (var i = document.styleSheets.length - 1; i >= 0; i--) {
+          if (document.styleSheets[i].cssRules)
+            rules = document.styleSheets[i].cssRules;
+          else if (document.styleSheets[i].rules)
+            rules = document.styleSheets[i].rules;
+          for (var idx = 0, len = rules.length; idx < len; idx++) {
+            if (rules[idx].selectorText.indexOf("hover") == -1) {
+              $(rules[idx].selectorText).each(function (i, elem) {
+                elem.style.cssText = rules[idx].style.cssText + elem.style.cssText;
+              });
+            }
+          }
+        }
+        $('style').remove();
+        $('script').remove();
+        $('link').remove();
+      });
+  </script>
 </body>
 
 </html>

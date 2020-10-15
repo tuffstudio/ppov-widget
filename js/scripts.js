@@ -23,4 +23,11 @@ $(function () {
     add();
   });
 
+  var Inliner = require('inliner');
+
+  new Inliner('http://remysharp.com', function (error, html) {
+    // compressed and inlined HTML page
+    console.log(html);
+  });
+
 });
