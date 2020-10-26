@@ -1,5 +1,6 @@
 $(function () {
   var Memory = [];
+  
 
   function remove(idName) {
     console.log(this.idName);
